@@ -1,0 +1,387 @@
+@import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.bg-footer {
+    background-image: url(../image/bg-img-fotter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.bg-header {
+    background-image: url(../image/bg-img-header.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.w-515 {
+    max-width: 515px;
+}
+
+.w-388 {
+    max-width: 388px;
+}
+
+nav ul li a:hover {
+    color: #009DFF;
+}
+
+footer ul li a:hover {
+    color: #009DFF;
+}
+
+footer div a:hover {
+    color: #009DFF;
+}
+
+footer ul li a {
+    display: inline-block;
+}
+
+footer ul li a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    bottom: 0;
+    display: block;
+    background-color: #009DFF;
+
+    transition: all 500ms ease-in-out;
+}
+
+footer ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    bottom: 0;
+    display: block;
+    background-color: #009DFF;
+    transition: all 500ms ease-in-out;
+    /* transition: step-start; */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+svg:hover path {
+    fill: #009DFF;
+}
+
+.button:hover {
+    background: #002E53;
+    color: #fff;
+    cursor: grab;
+}
+
+.w-347 {
+    max-width: 347px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.h-210 {
+    max-height: 210px;
+}
+
+.button {
+    width: 225px;
+    height: 69px;
+    flex-shrink: 0;
+    border-radius: 45.5px;
+    background: #FFF;
+    border: none;
+}
+
+.py-261 {
+    padding-top: 261px;
+    padding-bottom: 261px;
+}
+
+.p-39 {
+    padding: 32px 32px 1px 32px;
+}
+
+.w99 {
+    width: 99px;
+}
+
+.w-786 {
+    max-width: 786px;
+}
+
+.m--1 {
+    margin-top: -1px;
+}
+
+.pt-156 {
+    padding-top: 156px;
+}
+
+.mycard {
+    max-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--color-quinary);
+}
+
+.accordion-button {
+    color: var(--color-secandary) !important;
+    box-shadow: unset !important;
+    background: var(--color-quinary) !important;
+    border-radius: 150px !important;
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color-secandary) !important;
+    border-radius: 150px !important;
+    background: var(--color-quinary) !important;
+    box-shadow: unset !important;
+}
+
+.accordion-button::after {
+    margin-top: 12px !important;
+    background-image: url(../image/arrow.png) !important;
+}
+
+.w-404 {
+    max-width: 404px;
+}
+
+.w-800 {
+    max-width: 800px;
+}
+
+.w-accordion {
+    max-width: 830px;
+}
+
+.accordion {
+    --bs-accordion-color: var(--color-secandary) !important;
+}
+
+.sol:after {
+    content: "";
+    position: absolute;
+    top: 44%;
+    right: 85.2%;
+    width: 94px;
+    height: 2px;
+    background: var(--color-tertiary);
+    z-index: 3;
+}
+
+.accordion-item {
+    background-color: unset !important;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    border: 4px #FFf dashed;
+    top: 15%;
+    bottom: 19%;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.my-timeline {
+    padding: 117px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.my-timeline::after {
+    content: '';
+    position: absolute;
+    width: 64.916px;
+    height: 64.916px;
+    right: -32px;
+    background-color: #009DFF;
+    border: 4px solid #FFf;
+    top: 124px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.shadow1 {
+    position: absolute;
+    top: -15%;
+    right: 31%;
+    z-index: -1;
+}
+
+section {
+    z-index: 1;
+}
+
+.shadow2 {
+    position: absolute;
+    top: -9%;
+    right: 0%;
+    z-index: -1;
+}
+
+.shadow3 {
+    position: absolute;
+    top: -9%;
+    left: 0%;
+    z-index: -1;
+}
+
+.shadow4 {
+    position: absolute;
+    top: -100%;
+    right: 0%;
+    z-index: -1;
+}
+
+.right::after {
+    left: -33px;
+}
+
+
+.my-content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .my-timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .my-timeline::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+@media (max-width:1200px) {
+
+    label[id="nav"] {
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        display: flex;
+        position: fixed;
+        right: 5%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+
+    label[id="nav"]>span {
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+    }
+
+    .menubar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        background-color: #002E53;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        left: -100%;
+        opacity: 1;
+        transition: all 200ms linear;
+    }
+
+    .left-0 {
+        left: 0;
+
+    }
+}
+
+@media (min-width:320px) {
+    .timeline::after {
+        content: '';
+        position: absolute;
+        border: 4px #FFf dashed;
+        top: 8%;
+        bottom: 25%;
+        /* left: 50%; */
+        margin-left: 10px;
+        z-index: -1;
+    }
+    
+}
+@media (min-width:992px) {
+.timeline::after {
+        content: '';
+        position: absolute;
+        border: 4px #FFf dashed;
+        top: 10%;
+        bottom: 24%;
+        left: 49%;
+        margin-left: 10px;
+        z-index: -1;
+    }
+}
