@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .bg-footer {
@@ -57,8 +58,7 @@ footer ul li a::after {
     bottom: 0;
     display: block;
     background-color: #009DFF;
-
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 footer ul li a:hover::after {
@@ -76,11 +76,11 @@ nav ul li a::after {
     bottom: 0;
     display: block;
     background-color: #009DFF;
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
     /* transition: step-start; */
 }
 
-nav ul li a:hover::after {
+nav ul li a:active::after {
     width: 100%;
 }
 
@@ -88,10 +88,25 @@ svg:hover path {
     fill: #009DFF;
 }
 
-.button:hover {
+button.button:hover {
     background: #002E53;
     color: #fff;
     cursor: grab;
+}
+
+button:active {
+    box-shadow: 0px 4px 32px 0px rgba(39, 78, 150, 0.5) !important;
+}
+
+button.buttons:hover {
+    background: #002E53;
+    color: #fff;
+    cursor: grab;
+
+}
+
+.line {
+    text-decoration: line-through;
 }
 
 .w-347 {
@@ -109,6 +124,19 @@ svg:hover path {
 .button {
     width: 225px;
     height: 69px;
+    flex-shrink: 0;
+    border-radius: 45.5px;
+    background: #FFF;
+    border: none;
+}
+
+.pl-243 {
+    padding-left: 30px;
+}
+
+.buttons {
+    width: 149px;
+    height: 44px;
     flex-shrink: 0;
     border-radius: 45.5px;
     background: #FFF;
@@ -148,12 +176,21 @@ svg:hover path {
     background: var(--color-quinary);
 }
 
+.mycard:hover {
+    transition: all 0.3s linear;
+    box-shadow: 0px 0px 26px 0px rgba(39, 78, 150, 0.5);
+}
+
 .accordion-button {
     color: var(--color-secandary) !important;
     box-shadow: unset !important;
+    font-size: 9px !important;
     background: var(--color-quinary) !important;
     border-radius: 150px !important;
+}
 
+.z-1 {
+    z-index: 1
 }
 
 .accordion-button:not(.collapsed) {
@@ -184,21 +221,9 @@ svg:hover path {
     --bs-accordion-color: var(--color-secandary) !important;
 }
 
-.sol:after {
-    content: "";
-    position: absolute;
-    top: 44%;
-    right: 85.2%;
-    width: 94px;
-    height: 2px;
-    background: var(--color-tertiary);
-    z-index: 3;
-}
-
 .accordion-item {
     background-color: unset !important;
 }
-
 
 .timeline {
     position: relative;
@@ -209,7 +234,7 @@ svg:hover path {
 .timeline::after {
     content: '';
     position: absolute;
-    border: 4px #FFf dashed;
+    border: 2px #FFf dashed;
     top: 15%;
     bottom: 19%;
     left: 50%;
@@ -281,7 +306,6 @@ section {
     left: -33px;
 }
 
-
 .my-content {
     padding: 20px 30px;
     position: relative;
@@ -289,7 +313,6 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-
     .timeline::after {
         left: 31px;
     }
@@ -318,7 +341,6 @@ section {
 }
 
 @media (max-width:1200px) {
-
     label[id="nav"] {
         width: 30px;
         height: 24px;
@@ -329,7 +351,7 @@ section {
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        z-index: 1;
+        z-index: 3;
     }
 
     label[id="nav"]>span {
@@ -347,16 +369,15 @@ section {
         height: 50%;
         background-color: #002E53;
         position: fixed;
-        top: 0;
+        top: 0%;
         z-index: 2;
-        left: -100%;
+        right: -100%;
         opacity: 1;
-        transition: all 200ms linear;
+        transition: all 0.5s linear;
     }
 
-    .left-0 {
-        left: 0;
-
+    .right-0 {
+        right: 50%;
     }
 }
 
@@ -364,24 +385,32 @@ section {
     .timeline::after {
         content: '';
         position: absolute;
-        border: 4px #FFf dashed;
+        border: 2px #FFf dashed;
         top: 8%;
         bottom: 25%;
         /* left: 50%; */
         margin-left: 10px;
         z-index: -1;
     }
-    
 }
+
 @media (min-width:992px) {
-.timeline::after {
+    .timeline::after {
         content: '';
         position: absolute;
-        border: 4px #FFf dashed;
+        border: 2px #FFf dashed;
         top: 10%;
         bottom: 24%;
         left: 49%;
         margin-left: 10px;
         z-index: -1;
+    }
+
+    .accordion-button {
+        font-size: 20px !important;
+    }
+
+    .pl-243 {
+        padding-left: 243px !important;
     }
 }
