@@ -201,7 +201,7 @@ button.buttons:hover {
 }
 
 .accordion-button::after {
-    margin-top: 12px !important;
+    /* margin-top: 12px !important; */
     background-image: url(../image/arrow.png) !important;
 }
 
