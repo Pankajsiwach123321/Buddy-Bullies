@@ -257,6 +257,7 @@ button.buttons:hover {
     right: -32px;
     background-color: #009DFF;
     border: 4px solid #FFf;
+    box-shadow: 0 0 4px 17px #001931;
     top: 124px;
     border-radius: 50%;
     z-index: 1;
